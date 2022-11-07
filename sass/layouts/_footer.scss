@@ -1,0 +1,33 @@
+.footer-section {
+  background-color: var(--secondary-background-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+
+// .footer-social-list {
+//   display: flex;
+//   justify-content: center;
+//   gap: 10px;
+// }
+
+.social-networks__footer {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+
+  transition-property: background;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}

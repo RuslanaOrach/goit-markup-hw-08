@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid var(--border-main-nav);
+}
+
+.header__block {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

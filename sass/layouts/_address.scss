@@ -1,0 +1,39 @@
+.address-part .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+.address-list .link {
+  color: var(--white-blurred);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+
+.route {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+
+.address-list .route:hover,
+.address-list .route:focus,
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--accent-color);
+}
