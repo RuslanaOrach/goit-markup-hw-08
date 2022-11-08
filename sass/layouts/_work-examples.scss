@@ -1,5 +1,9 @@
 .work-examples {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 // .work-examples__title {
@@ -14,13 +18,14 @@
 
 .work-examples__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .work-examples__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+  width: 100%;
+  @media screen and(min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
   }
 }
 

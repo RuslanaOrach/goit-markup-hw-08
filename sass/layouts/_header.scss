@@ -10,13 +10,14 @@
 .navigation {
   display: flex;
 }
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .navigation__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
 .navigation__list {
   display: flex;
   margin-left: 93px;
+  gap: 30px;
 }
 
 .navigation__link {

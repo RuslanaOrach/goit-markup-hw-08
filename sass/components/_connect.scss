@@ -1,10 +1,7 @@
 .connect {
   display: flex;
   margin-left: auto;
-}
-
-.connect__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .connect__link {
