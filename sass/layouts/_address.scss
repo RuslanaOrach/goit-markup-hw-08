@@ -1,3 +1,9 @@
+.address {
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
+}
+
 .address__list {
   margin-top: 20px;
 }
@@ -20,15 +26,6 @@
 
 .address__route {
   color: var(--white-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
-
-  transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--cubic);
 }
 
 .address__route:hover,

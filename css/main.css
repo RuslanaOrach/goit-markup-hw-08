@@ -161,6 +161,12 @@ body {
   text-decoration: none;
   color: var(--studio-top-color);
 }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.7;
+  }
+}
 
 .logo__icon {
   color: var(--accent-color);
@@ -255,17 +261,29 @@ body {
 }
 
 .hero {
-  background-color: var(--secondary-background-dark);
+  margin: 0 auto;
   text-align: center;
-  padding: 200px 0px;
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
+  padding: 118px 0px;
+  max-width: 768px;
+  max-height: 400px;
+  background-color: var(--secondary-background-dark);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1200px;
+    max-height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    max-height: 600px;
+    padding: 200px 0px;
+  }
 }
 
 .hero__title {
@@ -281,9 +299,21 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
 
 .benefits {
   padding-top: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .benefits {
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .benefits {
@@ -459,7 +489,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   color: var(--icon-color);
   border: 1px solid #afb1b8;
@@ -487,6 +516,11 @@ body {
   display: flex;
   align-items: baseline;
 }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-block {
+    display: block;
+  }
+}
 
 .social-networks__footer {
   background: rgba(255, 255, 255, 0.1);
@@ -501,6 +535,12 @@ body {
 
 .footer-social-icon {
   fill: currentColor;
+}
+
+@media screen and (max-width: 1199px) {
+  .address {
+    text-align: center;
+  }
 }
 
 .address__list {
@@ -525,14 +565,6 @@ body {
 
 .address__route {
   color: var(--white-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--cubic);
 }
 
 .address__route:hover,
@@ -546,6 +578,12 @@ body {
   display: block;
   margin-left: 70px;
 }
+@media screen and (max-width: 1199px) {
+  .join-part {
+    text-align: center;
+    margin-left: 0;
+  }
+}
 
 .footer-join-title {
   font-weight: 700;
@@ -556,6 +594,11 @@ body {
   margin-bottom: 20px;
   color: var(--white-color);
 }
+@media screen and (max-width: 1199px) {
+  .footer-join-title {
+    margin-top: 60px;
+  }
+}
 
 .subscription-part {
   margin-left: auto;
@@ -563,7 +606,11 @@ body {
 
 .subscription-field {
   display: flex;
-  margin-top: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .subscription-field {
+    display: block;
+  }
 }
 
 .subscription-title {
@@ -573,6 +620,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .subscription-title {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .subscription-input {
@@ -589,6 +642,25 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--secondary-background-dark);
   color: var(--white-blurred);
+}
+@media screen and (min-width: 320px) {
+  .subscription-input {
+    width: 450px;
+    margin: 20px auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscription-input {
+    width: 450px;
+    margin: 20px auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-input {
+    width: 358px;
+  }
 }
 
 .subscription-btn {
@@ -613,6 +685,11 @@ body {
 }
 .subscription-btn:hover, .subscription-btn:focus {
   background-color: var(--button-hover);
+}
+@media screen and (max-width: 1199px) {
+  .subscription-btn {
+    margin: 0 auto;
+  }
 }
 
 .sub-send-icon {

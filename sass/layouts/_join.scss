@@ -1,6 +1,11 @@
 .join-part {
   display: block;
   margin-left: 70px;
+
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .footer-join-title {
@@ -12,4 +17,9 @@
   margin-bottom: 20px;
 
   color: var(--white-color);
+
+  @media screen and(max-width: 1199px) {
+    // text-align: center;
+    margin-top: 60px;
+  }
 }
