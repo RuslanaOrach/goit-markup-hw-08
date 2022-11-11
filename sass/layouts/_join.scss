@@ -1,10 +1,14 @@
 .join-part {
   display: block;
-  margin-left: 70px;
+  text-align: center;
+  margin-left: 0;
 
-  @media screen and(max-width: 1199px) {
-    text-align: center;
-    margin-left: 0;
+  @media screen and(min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
