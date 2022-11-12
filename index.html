@@ -20,9 +20,10 @@
 
   <body>
     <!-- шапка сайта -->
-    <!-- <header class="header">
+     <header class="header">
       <div class="container header__block">
         <a href="./index.html" class="logo header__logo"><span class="logo__icon">Web</span>Studio</a>
+
         <nav class="navigation">
           <ul class="list navigation__list">
             <li class="navigation__item"><a href="./index.html" class="navigation__link current">Студія</a></li>
@@ -52,8 +53,22 @@
             >
           </li>
         </ul>
+          <button type="button" class="menu-button is-open" js-open-menu>
+              <svg 
+              width="40" 
+              height="40"
+              aria-expanded="false"
+              aria-label="переключатель мобильного меню"
+              >
+                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+                 <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <div class="menu-container">
+              
+            </div>
       </div>
-    </header> -->
+    </header> 
     <main>
       <!-- Герой -->
        <section class="hero">
@@ -428,7 +443,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
           <svg
@@ -488,7 +503,10 @@
           </div> 
         </form>
       </div>
-    </div> 
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>  -->
+    
+    <script src="./js/menu.js"></script>
+     <script src="./js/modal.js"></script>
+     
   </body>
 </html>
