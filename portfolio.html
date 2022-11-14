@@ -19,9 +19,11 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    
+       <header class="header">
       <div class="container header__block">
         <a href="./index.html" class="logo header__logo"><span class="logo__icon">Web</span>Studio</a>
+
         <nav class="navigation">
           <ul class="list navigation__list">
             <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
@@ -51,8 +53,94 @@
             >
           </li>
         </ul>
+          <button 
+          type="button" 
+          class="menu-open-btn" 
+          data-menu-open
+          ><svg class="menu-open" 
+            width="40" 
+            height="40" 
+            aria-label="Переключатель мобильного меню">
+                <use href="./images/symbol-defs.svg#icon-menu" width="40" height="40">
+              </use>
+      </svg>
+          </button>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+        <div class="mob-menu__top">
+          
+           <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close">
+              <use href="./images/symbol-defs.svg#icon-close" width="40" height="40px"></use>
+            </svg>
+          </button>
+            <ul class="list mob-menu__list">
+            <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link ">Студія</a></li>
+            <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link mob-menu__current">Портфоліо</a></li>
+            <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакти</a></li>
+          </ul>
+          </div>
+
+          <div class="mob-menu__bottom">
+          <ul class="mob-connect__list list">
+          <li class="mob-connect__item">
+            <a href="tel:+380961111111" class="mob-connect__phone">
+              <div class="mob-connect__icon">
+              </div>
+              +38 096 111 11 11</a
+            >
+          </li>
+             <li class="mob-connect__item">
+            <a href="mailto:info@devstudio.com" class="mob-connect__mail">
+              <div class="mob-connect__icon">
+                <!-- <svg class="" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-letter"></use>
+                </svg> -->
+              </div>
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc list">
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Instagram</a>
+          </li>
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Twitter</a>
+          </li>
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Facebook</a>
+          </li>
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >LinkedIn</a>
+          </li>
+          </ul>
+        </div>
       </div>
-    </header> -->
+            </div>
+            </div>
+    </header> 
     <main>
       <!-- Приклад-->
        <section class="section">
@@ -65,8 +153,8 @@
             <li class="gallery-button-item"><button type="button" class="secondary-button">Дизайн</button></li>
             <li class="gallery-button-item"><button type="button" class="secondary-button">Маркетинг</button></li>
           </ul>
-        </div>
-         <div class="container">
+        </div> 
+          <div class="container">
           <ul class="gallery-list list">
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link">
@@ -251,12 +339,12 @@
               >
             </li>
           </ul>
-        </div>
+        </div> 
       </section> 
     </main>
 
     <!-- Футер -->
-       <footer class="footer-section">
+        <footer class="footer-section">
       <div class="container footer-block">
         <div class="address">
           <a href="./index.html" class="logo footer__logo"><span class="logo__icon">Web</span>Studio</a>
@@ -330,5 +418,6 @@
     </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

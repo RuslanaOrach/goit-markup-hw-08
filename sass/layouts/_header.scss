@@ -244,4 +244,11 @@
 }
 .mob-menu__current {
   color: var(--accent-color);
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--button-hover);
+  }
 }

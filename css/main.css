@@ -471,6 +471,12 @@ body {
 
 .mob-menu__current {
   color: var(--accent-color);
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.mob-menu__current:hover, .mob-menu__current:focus {
+  color: var(--button-hover);
 }
 
 .current {
@@ -1017,6 +1023,11 @@ body {
   justify-content: center;
   gap: 8px;
 }
+@media screen and (min-width: 480px) {
+  .gallery-button-list {
+    flex-wrap: wrap;
+  }
+}
 
 .gallery-list {
   display: flex;
@@ -1045,7 +1056,17 @@ body {
 }
 
 .gallery-list-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-list-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery-list-link {

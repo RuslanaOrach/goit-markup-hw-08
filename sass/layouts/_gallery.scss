@@ -29,14 +29,17 @@
   display: flex;
   justify-content: center;
   gap: 8px;
+  @include mobile {
+    flex-wrap: wrap;
+  }
 }
 
-// .gallery-button-item {
-//   margin-right: 8px;
-//   &:nth-child(5n) {
-//     margin-right: 0;
-//   }
-// }
+.gallery-button-item {
+  //  width: 100%;
+  // @include mobile {
+  //   width: calc((100% - 8px) / 4);
+  // }
+}
 
 .gallery-list {
   display: flex;
@@ -66,15 +69,13 @@
 }
 
 .gallery-list-item {
-  width: calc((100% - 60px) / 3);
-  // margin-right: 30px;
-  // margin-bottom: 30px;
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
-  // &:nth-last-child(-n + 3) {
-  //   margin-bottom: 0;
-  // }
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desctop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery-list-link {
