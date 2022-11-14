@@ -273,10 +273,26 @@ body {
   padding-top: 21px;
   padding-bottom: 21px;
   padding-left: 40px;
-  padding-right: 40px;
   z-index: 1;
 }
+@media screen and (max-width: 479px) {
+  .mob-menu {
+    width: 480px;
+    max-width: 479px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mob-menu > .container {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -285,7 +301,35 @@ body {
 }
 
 .menu-open-btn {
+  display: block;
   margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-open {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  fill: currentColor;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.menu-open:hover, .menu-open:focus {
+  color: var(--accent-color);
 }
 
 .menu-close-btn {
@@ -293,6 +337,23 @@ body {
   margin-left: auto;
   background-color: transparent;
   border: none;
+}
+
+.menu-close {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.menu-close:hover, .menu-close:focus {
+  color: var(--accent-color);
+}
+
+.menu-close {
+  fill: currentColor;
 }
 
 .mob-menu__list {
@@ -310,6 +371,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .mob-menu__link {
+    font-size: 35px;
+  }
 }
 
 .mob-connect__list {
@@ -327,6 +399,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.mob-connect__phone:hover, .mob-connect__phone:focus {
+  color: var(--button-hover);
+}
+@media screen and (max-width: 479px) {
+  .mob-connect__phone {
+    font-size: 29px;
+  }
 }
 
 .mob-connect__mail {
@@ -336,6 +419,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.mob-connect__mail:hover, .mob-connect__mail:focus {
+  color: var(--accent-color);
 }
 
 .mob-soc {
@@ -367,6 +456,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+.mob-soc__link:hover, .mob-soc__link:focus {
+  color: var(--button-hover);
+}
+@media screen and (max-width: 479px) {
+  .mob-soc__link {
+    font-size: 12px;
+  }
 }
 
 .mob-menu__current {
@@ -445,12 +545,19 @@ body {
   text-align: center;
   color: var(--white-color);
   font-weight: 900;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 @media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__title {
     width: 360px;
     font-size: 26px;
@@ -518,6 +625,11 @@ body {
   line-height: 1.15;
   font-size: 14px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__text {
@@ -1000,14 +1112,27 @@ body {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
   background-color: var(--white-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 610px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal-close-icon {
