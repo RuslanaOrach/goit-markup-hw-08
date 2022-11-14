@@ -53,21 +53,85 @@
             >
           </li>
         </ul>
-          <button type="button" class="menu-button is-open" js-open-menu>
-              <svg 
-              width="40" 
-              height="40"
-              aria-expanded="false"
-              aria-label="переключатель мобильного меню"
-              >
-                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
-                 <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-              </svg>
+          <button 
+          type="button" 
+          class="menu-open-btn" data-menu-open
+          >O
+          </button>
+            
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+        <div class="mob-menu__top">
+        <button 
+          type="button" 
+          class="menu-close-btn" data-menu-close
+          >X
             </button>
-            <div class="menu-container">
-              
-            </div>
+            <ul class="list mob-menu__list">
+            <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link mob-menu__current">Студія</a></li>
+            <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link">Портфоліо</a></li>
+            <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакти</a></li>
+          </ul>
+          </div>
+
+          <div class="mob-menu__bottom">
+          <ul class="mob-connect__list list">
+          <li class="mob-connect__item">
+            <a href="tel:+380961111111" class="mob-connect__phone">
+              <div class="mob-connect__icon">
+              </div>
+              +38 096 111 11 11</a
+            >
+          </li>
+             <li class="mob-connect__item">
+            <a href="mailto:info@devstudio.com" class="mob-connect__mail">
+              <div class="mob-connect__icon">
+                <!-- <svg class="" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-letter"></use>
+                </svg> -->
+              </div>
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc list">
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Instagram</a>
+          </li>
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Twitter</a>
+          </li>
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >Facebook</a>
+          </li>
+          <li class="mob-soc__item">
+            <a 
+            class="mob-soc__link" 
+            href=""
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >LinkedIn</a>
+          </li>
+          </ul>
+        </div>
       </div>
+            </div>
+            </div>
     </header> 
     <main>
       <!-- Герой -->
@@ -443,7 +507,7 @@
       </div>
     </footer>
 
-     <!-- <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
           <svg
@@ -494,7 +558,6 @@
             <span class="checkbox-icon"></span>
             <span>
               Погоджуюся з розсилкою та приймаю
-
               <span><a href="./index.html" class="policy-link">Умови договору</a> </span>
             </span>
           </label>
@@ -503,7 +566,7 @@
           </div> 
         </form>
       </div>
-    </div>  -->
+    </div>  
     
     <script src="./js/menu.js"></script>
      <script src="./js/modal.js"></script>
