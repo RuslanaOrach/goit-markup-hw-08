@@ -1055,6 +1055,12 @@ body {
   line-height: 1.88;
 }
 
+@media screen and (max-width: 479px) {
+  .gallery-list {
+    width: 370px;
+  }
+}
+
 .gallery-list-item {
   width: 100%;
 }

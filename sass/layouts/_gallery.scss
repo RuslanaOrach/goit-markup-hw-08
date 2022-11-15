@@ -34,18 +34,19 @@
   }
 }
 
-.gallery-button-item {
-  //  width: 100%;
-  // @include mobile {
-  //   width: calc((100% - 8px) / 4);
-  // }
-}
+// .gallery-button-item {
+//   //  width: 100%;
+//   // @include mobile {
+//   //   width: calc((100% - 8px) / 4);
+//   // }
+// }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   gap: 30px;
+
   & .discription {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -65,6 +66,11 @@
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
+  }
+}
+.gallery-list {
+  @media screen and(max-width: 479px) {
+    width: 370px;
   }
 }
 
