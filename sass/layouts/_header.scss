@@ -59,7 +59,7 @@
   z-index: 1;
 
   @media screen and (max-width: 479px) {
-    width: 480px;
+    // width: 480px;
     max-width: 479px;
   }
 
@@ -181,7 +181,7 @@
   }
 
   @media screen and (max-width: 479px) {
-    font-size: 29px;
+    font-size: 28px;
   }
 }
 .mob-connect__mail {

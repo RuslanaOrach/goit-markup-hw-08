@@ -293,7 +293,6 @@ body {
 }
 @media screen and (max-width: 479px) {
   .mob-menu {
-    width: 480px;
     max-width: 479px;
   }
 }
@@ -424,7 +423,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .mob-connect__phone {
-    font-size: 29px;
+    font-size: 28px;
   }
 }
 
