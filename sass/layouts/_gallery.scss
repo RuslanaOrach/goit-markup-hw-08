@@ -29,9 +29,15 @@
   display: flex;
   justify-content: center;
   gap: 8px;
-  @include mobile {
+  @media screen and (max-width: 767px) {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
   }
+  // @include mobile {
+  //   flex-wrap: wrap;
+  // }
 }
 
 // .gallery-button-item {

@@ -1,5 +1,7 @@
 .subscription-part {
-  margin: auto;
+  @media screen and(max-width: 1199px) {
+    margin: auto;
+  }
 
   @media screen and(min-width: 1200px) {
     margin-left: auto;
@@ -65,7 +67,7 @@
 
 .subscription-btn {
   padding: 10px 32px;
-  margin-left: 12px;
+  margin: 0 auto;
   display: flex;
   text-align: center;
   letter-spacing: 0.06em;
@@ -89,8 +91,8 @@
   &:focus {
     background-color: var(--button-hover);
   }
-  @media screen and(max-width: 1199px) {
-    margin: 0 auto;
+  @media screen and(min-width: 1200px) {
+    margin: auto 12px;
   }
 }
 
