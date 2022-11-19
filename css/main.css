@@ -219,17 +219,6 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .connect__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .connect__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
 .connect__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -1078,12 +1067,6 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
-}
-
-@media screen and (max-width: 479px) {
-  .gallery-list {
-    width: 370px;
-  }
 }
 
 .gallery-list-item {

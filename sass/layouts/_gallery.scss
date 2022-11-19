@@ -35,17 +35,7 @@
     justify-content: flex-start;
     row-gap: 15px;
   }
-  // @include mobile {
-  //   flex-wrap: wrap;
-  // }
 }
-
-// .gallery-button-item {
-//   //  width: 100%;
-//   // @include mobile {
-//   //   width: calc((100% - 8px) / 4);
-//   // }
-// }
 
 .gallery-list {
   display: flex;
@@ -72,11 +62,6 @@
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
-  }
-}
-.gallery-list {
-  @media screen and(max-width: 479px) {
-    width: 370px;
   }
 }
 

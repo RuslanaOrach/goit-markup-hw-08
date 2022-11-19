@@ -37,15 +37,6 @@
   }
 }
 
-.connect__item:not(:last-child) {
-  @include tablet {
-    margin-bottom: 10px;
-  }
-  @include desctop {
-    margin-bottom: 10px;
-  }
-}
-
 .connect__icon {
   margin-right: 10px;
   fill: currentColor;
